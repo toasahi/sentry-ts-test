@@ -1,13 +1,11 @@
 import './App.css'
+import { Button } from './button'
+
 
 function App() {
-
-  const methodDoesNotExist = () => {
-    throw new Error("Error コードです")
-  }
   return (
     <div>
-      <button onClick={methodDoesNotExist}>Break the world</button>
+      <Button>Break the world</Button>
     </div>
   )
 }
