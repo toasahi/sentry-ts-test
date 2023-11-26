@@ -1,3 +1,5 @@
+import * as Sentry from "@sentry/react";
+
 type Props = {
     children: React.ReactNode;
 }
@@ -5,7 +7,17 @@ type Props = {
 export const Button:React.FC<Props> = (props) => {
 
     const methodDoesNotExist = () => {
-        throw new Error("typescriptを追加 です")
+        // throw new Error("typescriptを追加 です")
+        Sentry.captureMessage("message",{
+          extra:{
+            password: 'jfdakaowejf',
+            data: {
+              password: "fjalkdfjaldsjfaodjfaojdf",
+              card: "adflkjdfaldsjfao",
+              username: "dajfadofaijei"
+            }
+          }
+        })
       }
 
     const { children} = props
