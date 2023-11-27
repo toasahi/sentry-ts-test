@@ -20,6 +20,9 @@ jobs:
 
             - name: initialize
               run: npm install
+            
+            - name: soucemap
+              run: npm run build
 
             - name: pwd
               run: pwd
