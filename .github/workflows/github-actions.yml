@@ -14,3 +14,8 @@ jobs:
 
             - name: initialize
               run: npm install
+
+            - name: pwd
+              run: pwd
+            - name: cat
+              run: cat package.json
