@@ -1,0 +1,8 @@
+name: sentry-upload-souce-map-actions
+run-name: ${{ github.actor }}
+on: [push]
+jobs:
+    source-map-upload-actions:
+        runs-on: ubuntu-latest
+        steps:
+            - run: npm install
