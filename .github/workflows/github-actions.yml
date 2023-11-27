@@ -9,6 +9,9 @@ jobs:
         runs-on: ubuntu-latest # ランナーサーバー(ワークフローを実行するサーバー)
         timeout-minutes: 10
         steps:
+            - name: pwd
+              run: pwd
+              
             - name: Checkout
               uses: actions/checkout@v4
 
