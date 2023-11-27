@@ -25,3 +25,5 @@ jobs:
               run: pwd
             - name: cat
               run: cat package.json
+            - name: ls
+              run: ls
