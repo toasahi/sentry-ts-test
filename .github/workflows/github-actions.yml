@@ -9,12 +9,6 @@ jobs:
         runs-on: ubuntu-latest # ランナーサーバー(ワークフローを実行するサーバー)
         timeout-minutes: 10
         steps:
-            - name: pwd
-              run: pwd
-
-            - name: ls
-              run: ls
-
             - name: Checkout
               uses: actions/checkout@v4
 
@@ -23,10 +17,3 @@ jobs:
             
             - name: soucemap
               run: npm run build
-
-            - name: pwd
-              run: pwd
-            - name: cat
-              run: cat package.json
-            - name: ls
-              run: ls
