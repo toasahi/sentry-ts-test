@@ -14,7 +14,8 @@ export const Button:React.FC<Props> = (props) => {
             data: {
               password: "fjalkdfjaldsjfaodjfaojdf",
               card: "adflkjdfaldsjfao",
-              username: "dajfadofaijei"
+              username: "dajfadofaijei",
+              email: "dfalkjfda@dsjlafdo.coma"
             }
           }
         })
