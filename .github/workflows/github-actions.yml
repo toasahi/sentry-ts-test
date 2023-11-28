@@ -18,4 +18,4 @@ jobs:
             - name: soucemap
               run: npm run build
               env:
-                authToken: ${{secrets.SENTRY_AUTH_TOKEN}}
+                SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
