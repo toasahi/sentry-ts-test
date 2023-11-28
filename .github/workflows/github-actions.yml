@@ -17,3 +17,6 @@ jobs:
             
             - name: soucemap
               run: npm run build
+                
+            - name: secret
+              run: echo "${{secrets.SENTRY_AUTH_TOKEN}}""
